@@ -1,10 +1,28 @@
-<title>
-  App Component
-</title>    
-<p>
-  App works!
-</p>
- <p>
-   {{ quotes }}	
- </p>
-<button class="btn btn-primary" (click)="showQuotes()">Quotes</button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="well well-lg">
+        <h3 class="quotes text-center">{{ quotes }}</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-lg" (click)="showQuotes()">Quotes</button>
+        </div>
+        <div class="col-md-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Random</a></li>
+            <li><a href="#">Nerdy</a></li>
+            <li><a href="#">Explecit</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-success btn-lg" href={{tweets}} role="button">Tweets</a>
+        </div>
+      </div>
+    </div>
+  </div>

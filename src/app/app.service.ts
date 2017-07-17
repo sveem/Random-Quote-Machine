@@ -9,13 +9,17 @@ import 'rxjs/add/operator/map';
   constructor( private http: Http) { }
 
   getQuotes() {
-    const url1 = "http://api.icndb.com/jokes/random?escape=javascript"
-    
-    return this.http.get(url1)
+    const url = "http://api.icndb.com/jokes/random?escape=javascript";
+     
+    return this.http.get(url)
       .map((res : Response)  => {
       let data = res.json();
       console.log('Data from app.service', data);
       return data;
     });
+  }
+
+  tweets() {
+    const twitter = "https://twitter.com/intent/tweet?text="
   }
 }

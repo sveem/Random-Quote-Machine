@@ -1,2 +1,2 @@
-# Random-Quote-Machine
+# Chuck Norris Quote Generator
 
