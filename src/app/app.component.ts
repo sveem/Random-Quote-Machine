@@ -10,7 +10,9 @@ import { QuotesService } from './app.service';
 export class AppComponent implements OnInit {
   quotes = '';
   tweets = "https://twitter.com/intent/tweet?text=";
-
+  title = 'Categories';
+  category = 'random';
+ 
   constructor(private quotesService: QuotesService) { }
 
   ngOnInit() {
@@ -18,10 +20,17 @@ export class AppComponent implements OnInit {
    }
 
   showQuotes() {
-    this.quotesService.getQuotes().subscribe(quotes => {
+    this.quotesService.getQuotes(this.category).
+      subscribe(quotes => {
       this.quotes = quotes.value.joke;
       this.tweets = this.tweets + this.quotes;
     }); 
+  }
+
+  getCategory (event) {
+    this.title = event.target.innerText
+    this.category = event.target.innerText.toLowerCase();
+    console.log(this.category);
   }
 
   sendTweet() {

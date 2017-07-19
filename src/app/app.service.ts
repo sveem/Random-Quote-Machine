@@ -8,9 +8,15 @@ import 'rxjs/add/operator/map';
 
   constructor( private http: Http) { }
 
-  getQuotes() {
-    const url = "http://api.icndb.com/jokes/random?escape=javascript";
-     
+  getQuotes(category) {
+    let url = `http://api.icndb.com/jokes/random`;
+    let search = `?limitTo=[${category}]`
+   
+    if (category !== 'random') {
+      url += search;
+    }
+ 
+    console.log('URL=>', url)
     return this.http.get(url)
       .map((res : Response)  => {
       let data = res.json();
