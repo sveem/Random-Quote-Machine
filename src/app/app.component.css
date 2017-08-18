@@ -11,7 +11,8 @@
 }
 
 .btn {
-  margin-left: 100px;
+/*  height: 5px;*/
+  margin: 0 auto;
 }
 
 .quotes {
