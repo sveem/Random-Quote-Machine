@@ -1,0 +1,27 @@
+<div class="container-fluid">
+   <div class="row" id="buttons">
+      <div class="col-xs-6">
+         <button id="btn" class="btn btn-primary btn-lg" (click)="showQuotes()">Quotes</button>
+         <a id="btn2" class="btn btn-info btn-lg" href={{tweets}} role="button">Tweets</a>
+         <div class="btn-group" id="dropdown">
+            <button class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ title }}
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+               <li [value]="random" (click)="getCategory($event)"><a href="#">Random</a></li>
+               <li [value]="nerdy" (click)="getCategory($event)"><a href="#">Nerdy</a></li>
+               <li [value]="explicit" (click)="getCategory($event)"><a href="#">Explicit</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="row" id="well">
+      <div class="col-xs-5">
+         <div class="well well-lg">
+            <h3 class="quotes text-center">{{ quotes }}</h3>
+         </div>
+      </div>
+   </div>
+</div>
+
