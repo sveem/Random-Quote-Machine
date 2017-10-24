@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   tweets = "https://twitter.com/intent/tweet?text=";
   title = 'Categories';
   category = 'random';
- 
+
   constructor(private quotesService: QuotesService) { }
 
   ngOnInit() {
