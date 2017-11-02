@@ -30,7 +30,6 @@ export class AppComponent implements OnInit {
   getCategory (event) {
     this.title = event.target.innerText
     this.category = event.target.innerText.toLowerCase();
-    console.log(this.category);
   }
 
   sendTweet() {
