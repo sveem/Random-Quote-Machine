@@ -1,7 +1,7 @@
 # Chuck Norris Quote Generator
 
 ## Description: 
-Random quote generator dedicated to the best Chuck Norris jokes ever.
+Random quote generator dedicated to the best Chuck Norris jokes ever: [Heroku link](https://chucknorris-quotes.herokuapp.com/)
 
 !['chuck norris'](/src/assets/logo.jpg)
 
