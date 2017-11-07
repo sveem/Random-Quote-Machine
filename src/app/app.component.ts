@@ -9,7 +9,7 @@ import { QuotesService } from './app.service';
 
 export class AppComponent implements OnInit {
   quotes = '';
-  tweets = "https://twitter.com/intent/tweet?text=";
+  tweets = 'https://twitter.com/intent/tweet?text=';
   title = 'Categories';
   category = 'random';
 

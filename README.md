@@ -1,6 +1,6 @@
 # Chuck Norris Quote Generator
 
-##Description: 
+## Description: 
 Random quote generator dedicated to the best Chuck Norris jokes ever.
 
 !['chuck norris'](/src/assets/logo.jpg)
