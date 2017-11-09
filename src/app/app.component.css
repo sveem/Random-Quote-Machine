@@ -5,12 +5,21 @@
 }
 
 .buttons-quotes-tweets {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .btn-primary {
   background-color: grey;
-  margin-right: 30px;
+  margin-right: auto;
+}
+
+.btn-info {
+  margin-right: auto;  
+  margin-left: auto;
+}
+
+#dropdown {
+  margin-left: auto;  
 }
 
 .well {
@@ -30,3 +39,9 @@
   font-size: 40px;
   font-family: Lobster;
 }
+
+@media (max-width: 450px) {
+  .quotes {
+    font-size: 2em;
+  }
+  }
